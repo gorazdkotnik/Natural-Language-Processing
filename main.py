@@ -7,10 +7,11 @@ ROOT_TEXT_FILES_DIRECTORY = 'languages'
 
 
 def main():
-    slo_text = LanguageText('languages', 'slo')
-    hr_text = LanguageText('languages', 'hr')
+    slo_text = LanguageText(ROOT_TEXT_FILES_DIRECTORY, 'slo')
+    hr_text = LanguageText(ROOT_TEXT_FILES_DIRECTORY, 'hr')
+    en_text = LanguageText(ROOT_TEXT_FILES_DIRECTORY, 'en')
 
-    for text in hr_text.text_list:
+    for text in en_text.text_list:
         print(text)
         print()
     """

@@ -5,7 +5,7 @@ import re
 def process_text(text):
     text = text.lower()
     text = re.sub(r'[^a-z ]', '', text)
-    return text;
+    return text.split();
 
 
 class LanguageText:
