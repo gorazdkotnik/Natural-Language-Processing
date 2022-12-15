@@ -1,9 +1,19 @@
-from fileinput import FileInput
 import re
 import collections
 
+from languagetext import LanguageText
+
+ROOT_TEXT_FILES_DIRECTORY = 'languages'
+
 
 def main():
+    slo_text = LanguageText('languages', 'slo')
+    hr_text = LanguageText('languages', 'hr')
+
+    for text in hr_text.text_list:
+        print(text)
+        print()
+    """
     file = FileInput('input.txt')
 
     input_text = file.get_content()
@@ -34,6 +44,7 @@ def main():
     print(sum_values(en_ngrams_dict))
     print(sum_values(sl_ngrams_dict))
     print(sum_values(hr_ngrams_dict))
+    """
 
 
 def process_text(text):
