@@ -1,5 +1,6 @@
 from languagetext import process_text
 
+
 class FileInput:
     def __init__(self, filename):
         self.filename = filename

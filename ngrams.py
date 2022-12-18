@@ -28,3 +28,14 @@ def add_to_dict(ngrams_dict, ngrams):
     for ngram in ngrams:
         if ngram in ngrams_dict:
             ngrams_dict[ngram] += 1
+
+
+def classify_ngrams(input_ngrams_dict, language_ngrams_dict, frequency_table_length=300):
+    language_distance = 0
+    for ngram in input_ngrams_dict:
+        if ngram in language_ngrams_dict:
+            language_distance += abs(language_ngrams_dict[ngram] - input_ngrams_dict[ngram])
+        else:
+            language_distance += frequency_table_length
+
+    return language_distance
