@@ -3,7 +3,6 @@ import collections
 
 from languagetext import LanguageText
 from fileinput import FileInput
-from languageprocessing import LanguageProcessing
 from frequency import Frequency
 
 ROOT_TEXT_FILES_DIRECTORY = 'languages'
