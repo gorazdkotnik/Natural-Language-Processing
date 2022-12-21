@@ -5,7 +5,7 @@ from ngrams import classify_ngrams
 from graphs import draw_distance_bar_chart, draw_top_ngrams_bar_chart
 
 ROOT_TEXT_FILES_DIRECTORY = 'languages'
-NGRAMS_RANGE = range(2, 5)
+NGRAMS_RANGE = range(2, 6)
 READ_JSON = True
 
 
